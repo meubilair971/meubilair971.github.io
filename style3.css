@@ -1,0 +1,754 @@
+*{
+    box-sizing: border-box;
+}
+
+#brand_image{
+    width:80%;
+    /* margin-top: 10%; */
+}
+.pesan-penting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5%;
+}
+.pesan-penting>*{
+    color: white;
+    font-size: large;
+    /* margin: 5%; */
+}
+h2{font-size: calc(1.1rem + .9vw);
+}
+.navbar{
+    width: 100%;
+    height: 11vh;
+    /* background-color: sienna; */
+    position: fixed;
+    top: 0;
+    z-index: 9998;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.tes{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: ease-in;
+    transition-duration: 2s;
+}
+.arrow{
+    color: white;
+    font-weight: 900;
+    background-color: white;;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: .7;
+}
+.bottom{
+    background-image: url(imgs/arrowbottom.png);
+    background-size: cover;
+    z-index: 100;
+    width: 60%;
+    height: 60%;
+}
+#judul{
+    font-size: 4em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+    text-shadow: 6px 6px 6px black;
+    font-weight: 900;
+}
+h1{
+    font-size: 4em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+    text-shadow: 3px 3px 3px black
+}
+#tagline{
+    display: block;
+    font-size: 2em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+    text-shadow: 3px 3px 3px black;
+    border-bottom: white 3px solid;
+}
+.black{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(0,0,0); */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,14,14,1) 54%, rgba(34,34,34,0.6681034482758621) 75%, rgba(255,255,255,0) 100%);
+    position: relative;
+    z-index: 10;
+    opacity: .3;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+    overflow: hidden;
+}
+/* .section h1{
+    text-align: left;
+} */
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.container-fluid{
+    /* background-color: #fff; */
+    /* padding-bottom: 1vh; */
+}
+#section0,
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7,
+#section8,
+#slide10,
+#slide11,
+#slide12,
+#slide13,
+#slide20,
+#slide21,
+#slide22{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section0{
+    background-image: url(imgs/jon-tyson-KAQPB2JR7j0-unsplash.jpg);
+    background-position: center;
+}
+.pembungkus{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 80;
+}
+#section0 h1{
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+
+.valueproposition_main{
+    position: relative;
+    top: 5vh;
+    left: 5%;
+    width: 90%;
+    height: 90vh;
+    background: linear-gradient(0deg, rgba(5,5,5,0.375) 0%, rgba(3,3,3,0.7823275862068966) 40%, rgba(2,2,2,0.7887931034482758) 60%, rgba(0,0,0,0.37715517241379315) 100%);
+}
+.valueproposition{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(5,5,5,0.9202586206896551) 0%, rgba(0,0,0,0.375) 100%);
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.valueproposition p{
+    font-size: 1.5em;
+    color: white;
+}
+.subjudul{
+    width: 100%;
+    height: 25vh;
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10% 5% 5% 0;
+}
+.subjudul h2{
+    font-size: 2em;
+    color: white;
+    text-align: right;
+}
+.fil-kiri{
+    width: 10%;
+    height: 70vh;
+    border-right: 2px white solid;
+}
+.fil-kanan{
+    width: 75%;
+    height: 70vh;
+    text-align: left;
+}
+.fil-kanan>*{
+    color: white;
+    margin: 5%;
+}
+/*Adding background for the slides
+* --------------------------------------- */
+#slide10{
+    background-image: url(imgs/jon-tyson-KAQPB2JR7j0-unsplash.jpg);
+    background-position: center;
+    /* padding: 6% 0 0 0; */
+}
+#slide11{
+    background-image: url(imgs/Couple-shopping-using-VR-inside-the-mall.jpg);
+    background-position: right;
+    /* padding: 6% 0 0 0; */
+}
+#slide12{
+    background-image: url(imgs/forestnewscifor.jpg);
+    background-position: center;
+    /* padding: 6% 0 0 0; */
+}
+/* Bottom menu
+* --------------------------------------- */
+
+#section2{
+    background-image: url(imgs/bernard-hermant-X-Bu9X6gok0-unsplash.jpg);
+
+}
+#slide20,#slide21,#slide22{
+    background-image: url(imgs/bernard-hermant-X-Bu9X6gok0-unsplash.jpg);
+    padding: 10vh 5px 5px 5px;
+}
+
+#carouselExampleCaptions{
+    margin: auto;
+    width: 70% !important;
+    height: 60%;
+    overflow: hidden;
+}
+.form_desain::-webkit-scrollbar, .jasa_desain::-webkit-scrollbar {
+    display: none;
+  }
+
+#slide21{
+display: flex;
+align-content: space-around;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.kategori{
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
+    width: 40%;
+    height: 22vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kategori>*{
+    box-shadow: 0px 0px 1px rgb(255, 255, 255), 0px 0px 6px rgb(255, 253, 253);
+    display: block;
+    background-color: rgba(255,255, 255, .7);
+    min-width: 40%;
+    padding: 2%;
+}
+#slide22{
+    background-position: center;
+    margin-top: 0 !important;
+    display: flex;
+    position: relative;
+}
+#modal-content-kategori{
+    position: relative;
+    top: 5vh;
+    height: 90vh;
+    width: 100%;
+}
+.barang{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    /* flex-direction: ; */
+    overflow: hidden;
+    border-radius: 2%;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+.div_gambar_barang{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gambar_barang{
+    height: auto;
+    width: 90%;
+}
+.div_keterangan_barang{
+    height: 100%;
+    width: 50%;
+    border-left: 1px solid black;
+    padding: 5%;
+    overflow-y: scroll;
+
+}
+.div_keterangan_barang>*{
+    border-bottom: 1px groove white;
+    margin: 5%;
+    margin: 0;
+    font-size: 1rem;
+
+}
+/* Ini slide 22 */
+#frame{
+    width: 50%;
+    height: 80vh;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: yellow;
+    position: relative;
+}
+#iframe{
+        width: 100%;
+        height: 100%;
+        /* border: 5%; */
+}
+
+.navigasi_vr{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.panah, .select_show{
+    width: 33.3%;
+    display: inline-block;
+    background-color: black;
+    color: wheat;
+}
+.select_show>*{
+    background-color: black;
+    color: white;
+    width: 50%;
+    border-bottom: 1px ;
+}
+.list-item{
+    width: 50%;
+    height: 80vh;
+    /* background-color: rgba(255,255,255); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.item{
+    width: 30%;
+    height: 48%;
+    border-radius: 5%;
+    padding: 1.5%;
+    /* text-align: left; */
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.item::-webkit-scrollbar {
+    display: none;
+  }
+.item .gambar{
+    width: 100%;
+    height: 60%;
+    align-self: center;
+    /* background-color: brown; */
+    /* background-position: center; */
+    background-color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-attachment: ; */
+}
+/* .item img{
+    width: 100%;
+    height: ;
+} */
+
+.item h4{
+    text-align: left;
+    height: 10%;
+    width: 100%;
+    padding: 2px 5px;
+    font-size: 1em;
+}
+.item h6{
+    text-align: right;
+    height: 10%;
+    width: 100%;
+    padding: 2px 5px;
+    font-size: 1em;
+}
+.item .keterangan{
+    height: 15%;
+    width: 100%;
+}
+.modal-backdrop {
+    z-index: -1;
+}
+.modal-body{
+    display: flex;
+    overflow: hidden;
+}
+#modal_kategori{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-around;
+}
+
+/* Ini slide22 */
+.modal-content{
+    height: 60vh;
+}
+.konten{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+#gambar_modal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nama_modal{
+    width: 100%;
+    height: 20%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nama_modal h4{
+    font-size: 1.5em;
+}
+#harga_modal{
+    width: 100%;
+    height: 15%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5%;
+}
+#harga_modal h4{
+    font-size: 1.5em;
+}
+#deskripsi_modal{
+    width: 100%;
+    height: 65%;
+    border: solid 1px black;
+}
+#deskripsi_modal p{
+    font-size: 1em;
+}
+.keterangan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item
+.keterangan .popup, .keterangan .cart{
+    width: 50%;
+}
+.keterangan .popup button, .keterangan .cart button{
+    width: 100%;
+}
+
+#aktifkan_modal, #aktifkan_modal_, #aktifkan_modal_section3, #aktifkan_modal_section4{
+    display: none;
+}
+#gambar_modal img{
+    width: auto;
+    height: 100%;
+}
+#section3{
+    background-image: url(imgs/sidekix-media-I_QC1JICzA0-unsplash.jpg);
+    padding: 10vh 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jasa_desain, .form_desain{
+    width: 40%;
+    height: 80vh;
+    border: black;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 2%;
+    margin: 0 1%;
+    padding: 2%
+}
+.jasa_desain{
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.form_desain{
+    background-color: rgba(255,255,255,.8);
+    text-align: left;
+}
+.form_desain form{
+    height: 80vh;
+}
+#section4{
+    background-image: url(imgs/163162_00_2x.jpg);
+    padding: 10vh 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+.ol{
+    list-style-type: decimal;
+    text-align: left;
+}
+.ol li{
+    margin-top: 3%;
+}
+.ol button{
+    align-self: center;
+}
+.alur .janji , .alur .custom{
+    display: none;
+}
+.btn-success{
+    background-color: rgb(11, 193, 163);
+}
+#form_desain_section4{
+    overflow-y: scroll;
+}
+#example_Modal_section4, #example_Modal_section3{
+    margin-top: 5%;
+    text-align: left;
+}
+@media only screen and (max-width: 768px) {
+.fil-kanan h4, .fil-kanan p, .fil-kanan ol{
+    font-size: 1.5rem;
+}
+.aaa{
+    padding-bottom: 2vh!important;
+}
+#brand_image{
+    width: 100%;
+}
+.container-fluid{
+    background-color: #fff;
+    /* padding-bottom: 1vh; */
+}
+.valueproposition{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(5,5,5,0.6681034482758621) 0%, rgba(0,0,0,0.375) 100%);
+}
+.navbar-brand{
+width: 45%;
+}
+.valueproposition p{
+    font-size: 1.5rem;
+}
+.subjudul{
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    padding: 15vh 0 3% 0;
+    align-items: center;
+}
+.subjudul h2{
+    text-align: center;
+}
+.fil-kiri, .fil-kanan{
+    border: none;
+    height: 60vh;
+}
+
+#modal_kategori{
+    flex-direction: row;
+    padding: 7% 3%;
+}
+.barang{
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.div_gambar_barang{
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+.div_keterangan_barang{
+    width: 100%;
+    height: 48%;
+}
+.gambar_barang{
+    height: 80%;
+    width: auto;
+}
+#slide22{
+    flex-direction: column;
+    background-image: url(imgs/bernard-hermant-X-Bu9X6gok0-unsplash.jpg);
+    padding: 1vh 5px 5px 5px;
+}
+#frame{
+    width: 100%;
+    height: 37vh;
+}
+.list-item{
+    width: 100%;
+    height: 55vh;
+    margin-top: 5px;
+}
+.item{
+    width: 30%;
+    height: 45%;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0;
+}
+.item .gambar{
+    width: 100%;
+    height: 80%;
+}
+.item h4, .item h6{
+    font-size: 15px;
+}
+.modal-body{
+    flex-direction: column;
+}
+.modal-content{
+    height: 80vh;
+}
+.keterangan{
+    height: 10%;
+}
+.keterangan>*{
+    font-size: 15px;
+}
+
+.konten, #gambar_modal{
+    width: 100%;
+}
+#gambar_modal img{
+    width: 70%;
+    height: 80%;
+}
+.select_show>*{
+    width: 100%;
+
+}
+
+.home{
+    display: none;
+}
+.panah, .select_show{
+    width: 50%;
+    border-radius: 0%!important;
+}
+
+/* .form_desain{
+    width: 80%;
+    overflow-y: scroll;
+    padding: 3% 3% 6% 3%;
+} */
+.alur .janji, .alur .custom{
+    display: inline-block;
+}
+.form_desain{
+    display: none;
+}
+
+.jasa_desain{
+    width: 75%;
+}
+.jasa_desain>*{
+    margin-top: 3%;
+}
+.alur>*{
+    margin-top: 5%;
+}
+.jasa_desain h6{
+    font-size: .7rem;
+}
+.kategori>*{
+    min-width: 100%;
+}
+
+/* #section3{
+    display: none;
+} */
+/* .navigasi_vr{
+    font-size: 1em;
+} */
+  }
+
+@media only screen and (max-width: 768px) {
+    .jasa_desain{
+        width: 75%;
+    }
+    .jasa_desain>*{
+        margin-top: 1%;
+    }
+    .alur>*{
+        margin-top: 2%;
+    }
+    .jasa_desain h6{
+        font-size: 1rem;
+    }
+  }
+
+@media (min-width: 576px){
+    .modal-dialog-scrollable {
+        max-width: 90%;
+    }
+    .modal-dialog-centered{
+        max-width: 70%;
+    }
+}
